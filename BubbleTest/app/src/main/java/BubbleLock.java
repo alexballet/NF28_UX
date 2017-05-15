@@ -13,5 +13,4 @@ public class BubbleLock {
     private String description;
 
     private Lock lock;
-
 }
