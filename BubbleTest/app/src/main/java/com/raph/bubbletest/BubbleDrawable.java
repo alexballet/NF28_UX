@@ -1,18 +1,21 @@
 package com.raph.bubbletest;
 
+import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.ShapeDrawable;
+import android.graphics.drawable.shapes.OvalShape;
 
 /**
  * Created by Raph on 15/05/2017.
  */
 
-public class BubbleDrawable extends GradientDrawable {
+public class BubbleDrawable extends ShapeDrawable {
 
-    public BubbleDrawable(int pStartColor, int pCenterColor, int pEndColor, int pStrokeWidth, int pStrokeColor) {
-        super(Orientation.BOTTOM_TOP,new int[]{pStartColor,pCenterColor,pEndColor});
-        setStroke(pStrokeWidth,pStrokeColor);
-        setShape(GradientDrawable.OVAL);
+    public BubbleDrawable(int color,int size) {
+        setShape(new OvalShape());
+        setIntrinsicHeight (size);
+        setIntrinsicWidth (size);
+        getPaint().setARGB(255,66, 170, 244);
     }
 
 }

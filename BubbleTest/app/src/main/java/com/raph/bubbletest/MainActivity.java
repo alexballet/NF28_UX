@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         mCustomDrawableView = new CustomDrawableView(this);
 
         //setContentView(R.layout.activity_main);
-        BubbleDrawable vDrawable = new BubbleDrawable(Color.BLACK,Color.GREEN,Color.LTGRAY,2,Color.RED,50);
+        BubbleDrawable vDrawable = new BubbleDrawable(1,50);
         View vView = new View(this);
         vView.setBackgroundDrawable(vDrawable);
         setContentView(vView);
