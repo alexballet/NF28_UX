@@ -6,16 +6,27 @@ import android.location.*;
 
 public class Lock {
 
+    private String lockId;
+
     private String description;
 
     private String lockSerialNumber;
 
     private Address address;
 
-    public Lock(String description, String lockSerialNumber, Address address) {
+    public Lock(String lockId, String description, String lockSerialNumber, Address address) {
+        this.lockId = lockId;
         this.description = description;
         this.lockSerialNumber = lockSerialNumber;
         this.address = address;
+    }
+
+    public String getLockId() {
+        return lockId;
+    }
+
+    public void setLockId(String lockId) {
+        this.lockId = lockId;
     }
 
     public String getDescription() {
