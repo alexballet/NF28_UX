@@ -9,7 +9,13 @@ import android.view.View;
 
 public class BubbleLockGroupIcon extends View {
 
-    public BubbleLockGroupIcon(Context context) {
+    public BubbleLockGroupIcon(Context context, BubbleLockGroup bubbleLockGroup) {
         super(context);
+
+
+
+        for (BubbleLock bubbleLock : bubbleLockGroup.getBubbleLocks()) {
+
+        }
     }
 }
