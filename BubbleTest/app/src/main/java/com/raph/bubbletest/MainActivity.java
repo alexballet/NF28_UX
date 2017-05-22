@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.graphics.drawable.GradientDrawable;
 import android.view.View;
+import android.view.ViewGroup;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,9 +17,11 @@ public class MainActivity extends AppCompatActivity {
         mCustomDrawableView = new CustomDrawableView(this);
 
         //setContentView(R.layout.activity_main);
-        BubbleDrawable vDrawable = new BubbleDrawable(1,50);
+        BubbleDrawable vDrawable = new BubbleDrawable(1,1);
         View vView = new View(this);
-        vView.setBackgroundDrawable(vDrawable);
+        vView.setLayoutParams(new ViewGroup.LayoutParams(300, 300));
+        vView.setBackground(vDrawable);
+        vView.setOnTouchListener(new CustomTouchListener());
         setContentView(vView);
     }
 }

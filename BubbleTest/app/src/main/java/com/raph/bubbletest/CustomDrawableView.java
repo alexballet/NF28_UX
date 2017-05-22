@@ -22,7 +22,7 @@ public class CustomDrawableView extends View {
         int height = 50;
 
         mDrawable = new ShapeDrawable(new OvalShape());
-        mDrawable.getPaint().setColor(0xff74AC23);
+        mDrawable.getPaint().setColor(0xff740C23);
         mDrawable.setBounds(x, y, x + width, y + height);
     }
 
