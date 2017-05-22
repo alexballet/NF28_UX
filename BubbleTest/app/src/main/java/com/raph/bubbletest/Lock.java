@@ -1,6 +1,4 @@
-import android.location.*;
-
-import java.security.acl.Owner;
+package com.raph.bubbletest;
 
 /**
  * Created by Alxd on 15/05/2017.

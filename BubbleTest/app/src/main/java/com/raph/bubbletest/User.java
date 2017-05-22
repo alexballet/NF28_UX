@@ -1,3 +1,5 @@
+package com.raph.bubbletest;
+
 import java.util.List;
 
 /**

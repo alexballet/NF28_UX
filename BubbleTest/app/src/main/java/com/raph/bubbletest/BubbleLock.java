@@ -1,3 +1,5 @@
+package com.raph.bubbletest;
+
 import android.graphics.Color;
 
 /**
@@ -6,11 +8,7 @@ import android.graphics.Color;
 
 public class BubbleLock {
 
-    private Integer diameter;
-
     private Color color;
-
-    private String description;
 
     private Lock lock;
 }

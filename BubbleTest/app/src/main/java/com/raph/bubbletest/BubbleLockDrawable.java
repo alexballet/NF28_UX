@@ -9,9 +9,9 @@ import android.graphics.drawable.shapes.OvalShape;
  * Created by Raph on 15/05/2017.
  */
 
-public class BubbleDrawable extends ShapeDrawable {
+public class BubbleLockDrawable extends ShapeDrawable {
 
-    public BubbleDrawable(int color,int size) {
+    public BubbleLockDrawable(int color, int size) {
         setShape(new OvalShape());
         setIntrinsicHeight (size);
         setIntrinsicWidth (size);
