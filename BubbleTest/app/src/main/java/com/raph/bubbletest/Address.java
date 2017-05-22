@@ -18,6 +18,15 @@ public class Address {
 
     private String ZIPCode;
 
+    public Address(){
+        this.streetNumber = "";
+        this.street = "";
+        this.city = "";
+        this.country = "";
+        this.ZIPCode = "";
+        this.apartmentNumber = "";
+    }
+
     public Address(String streetNumber, String street, String city, String country, String ZIPCode, String apartmentNumber) {
         this.streetNumber = streetNumber;
         this.street = street;

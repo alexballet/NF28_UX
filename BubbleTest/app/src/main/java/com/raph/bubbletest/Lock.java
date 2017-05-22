@@ -16,7 +16,15 @@ public class Lock {
 
     private User owner;
 
-    public Lock(String lockId, String description, String lockSerialNumber, Address address, User owner) {
+    public Lock (){
+        this.lockId = "";
+        this.description = "";
+        this.lockSerialNumber = "";
+        this.address = new Address();
+        this.owner = null;
+    }
+
+    public Lock(String lockId, String description, String lockSerialNumber , Address address, User owner) {
         this.lockId = lockId;
         this.description = description;
         this.lockSerialNumber = lockSerialNumber;

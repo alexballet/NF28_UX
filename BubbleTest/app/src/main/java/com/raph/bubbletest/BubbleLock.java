@@ -11,4 +11,9 @@ public class BubbleLock {
     private Color color;
 
     private Lock lock;
+
+    public BubbleLock(Color color, Lock lock) {
+        this.color = color;
+        this.lock = lock;
+    }
 }
