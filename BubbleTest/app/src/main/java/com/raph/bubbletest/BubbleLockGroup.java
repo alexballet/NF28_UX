@@ -8,17 +8,17 @@ import java.util.List;
 
 public class BubbleLockGroup {
 
-    private List<BubbleLock> locks;
+    private List<BubbleLock> bubblelocks;
 
-    public List<BubbleLock> getLocks() {
-        return locks;
+    public List<BubbleLock> getBubbleLocks() {
+        return bubblelocks;
     }
 
-    public void setLocks(List<BubbleLock> locks) {
-        this.locks = locks;
+    public void setLocks(List<BubbleLock> bubblelocks) {
+        this.bubblelocks = bubblelocks;
     }
 
-    public BubbleLockGroup(List<BubbleLock> locks) {
-        this.locks = locks;
+    public BubbleLockGroup(List<BubbleLock> bubblelocks) {
+        this.bubblelocks = bubblelocks;
     }
 }
