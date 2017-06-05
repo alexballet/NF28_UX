@@ -15,7 +15,7 @@ public class BubbleLockDrawable extends ShapeDrawable {
         setShape(new OvalShape());
         setIntrinsicHeight (size);
         setIntrinsicWidth (size);
-        getPaint().setARGB(255,66, 170, 244);
+        getPaint().setARGB(255,66+color, 170-color/2, 244);
     }
 
 }

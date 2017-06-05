@@ -20,5 +20,5 @@
         android:layout_height="50dp"
         android:background="@drawable/bubble" />
 
-    />
+
 </android.support.constraint.ConstraintLayout>
