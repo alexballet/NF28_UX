@@ -16,10 +16,10 @@ public class SingleViewActivity extends Activity {
 
         // Selected image id
         int position = i.getExtras().getInt("id");
-        ImageAdapter imageAdapter = new ImageAdapter(this);
+        //ImageAdapter imageAdapter = new ImageAdapter(this);
 
         ImageView imageView = (ImageView) findViewById(R.id.SingleView);
-        BubbleLockDrawable vDrawable = new BubbleLockDrawable(1, 1, Model.getInstance().bubbleLockGroupList.get(position));
+        BubbleLockDrawable vDrawable = new BubbleLockDrawable(1, Model.getInstance().bubbleLockGroupList.get(position));
         imageView.setBackgroundDrawable(vDrawable);
     }
 }

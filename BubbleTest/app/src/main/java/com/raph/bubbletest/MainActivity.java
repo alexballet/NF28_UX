@@ -37,22 +37,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         mCustomDrawableView = new CustomDrawableView(this);
 
-        // create test bubbleLocks
-        for(Integer i=0; i<lockNumber; i++){
-            Lock l = new Lock();
-            Color col = new Color();
-            List<BubbleLock> bubbleLockList = new ArrayList<BubbleLock>();
-
-            BubbleLock bubbleLock = new BubbleLock(BubbleLock.randomColor(), l);
-            bubbleLockList.add(bubbleLock);
-            if (i%2==1) {
-                BubbleLock bubbleLock2 = new BubbleLock(BubbleLock.randomColor(), l);
-                bubbleLockList.add(bubbleLock2);
-            }
-            BubbleLockGroup bubbleLockGroup = new BubbleLockGroup("test", bubbleLockList);
-            model.bubbleLockGroupList.add(bubbleLockGroup);
-        }
-
         //position par rapport au centre:
         //nLocks, autour d'un cercle de rayon r, de centre (x_ctr,y_ctr)
         //pour le lock numéro i (de 0 à nLocks-1), ses coordonnées sont :
@@ -101,8 +85,6 @@ public class MainActivity extends AppCompatActivity {
         //View mainView = new View(this);
         //setContentView(mainView);
         //addContentView(bubbleView, new ViewGroup.LayoutParams(200,200));
-
-        setContentView(R.layout.activity_main);
 
     }
 }
