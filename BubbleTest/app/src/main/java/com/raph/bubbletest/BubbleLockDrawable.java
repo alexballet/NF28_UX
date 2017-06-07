@@ -11,15 +11,17 @@ import android.graphics.drawable.shapes.OvalShape;
 
 public class BubbleLockDrawable extends ShapeDrawable {
 
-    public BubbleLockDrawable(int color, int size, BubbleLockGroup bubbleLockGroup) {
+    public BubbleLockDrawable(int size, BubbleLockGroup bubbleLockGroup) {
         setShape(new OvalShape());
         setIntrinsicHeight (size);
         setIntrinsicWidth (size);
+
         if (bubbleLockGroup.getBubbleLocks().size() == 1) {
             getPaint().setARGB(bubbleLockGroup.getBubbleLocks().get(0).getColor().get(0), bubbleLockGroup.getBubbleLocks().get(0).getColor().get(1), bubbleLockGroup.getBubbleLocks().get(0).getColor().get(2), bubbleLockGroup.getBubbleLocks().get(0).getColor().get(3));
         } else {
             getPaint().setARGB(255,0, 0, 0);
         }
+
     }
 
 }
