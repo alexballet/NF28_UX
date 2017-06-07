@@ -8,6 +8,16 @@ import java.util.List;
 
 public class BubbleLockGroup {
 
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     private List<BubbleLock> bubblelocks;
 
     public List<BubbleLock> getBubbleLocks() {
@@ -18,7 +28,8 @@ public class BubbleLockGroup {
         this.bubblelocks = bubblelocks;
     }
 
-    public BubbleLockGroup(List<BubbleLock> bubblelocks) {
+    public BubbleLockGroup(String name, List<BubbleLock> bubblelocks) {
         this.bubblelocks = bubblelocks;
+        this.name = name;
     }
 }
